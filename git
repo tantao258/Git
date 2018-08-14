@@ -1,0 +1,16 @@
+工作区------本地仓库-------远程仓库
+
+
+创建本地仓库：
+    1、新建文件夹
+    2、cd repository
+    3、git init
+
+添加文件到仓库：
+    1、git add filename
+    2、git commit "info"
+
+查看仓库状态：
+    git status
+
+
