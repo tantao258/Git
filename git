@@ -1,0 +1,44 @@
+工作区------本地仓库-------远程仓库
+
+
+创建本地仓库：
+    1、新建文件夹
+    2、cd repository
+    3、git init
+
+添加文件到仓库：
+    1、git add filename               ---------添加到暂存区
+    2、git commit -m "msg"            ---------添加到分支
+    注：需要提交的文件通通放到暂存区，然后，一次性提交到分支
+
+删除文件：
+    1、删除文件
+    2、git rm
+    3、git commit -m "msg"
+
+
+查看仓库状态：
+    git status
+
+本地仓库添加到github仓库：
+    1、github建立仓库
+    2、git remote add origin https://github.com/tantao258/Git.git
+    3、git push (-u) origin master
+    注：远程库是空的，我们第一次推送master分支时，加上了-u参数，Git不但会把本地的master分支内容推送的远程新的master分支，
+    还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
+
+创建分支：
+    1、git branch branch_name
+切换分支：
+    1、git checkout branch_name
+列出所有分支：
+    1、git branch
+
+合并分支：
+    1、git merge branch_name   合并指定分支到当前分支
+
+删除分支：
+    1、git branch -d branch_name
+
+拉取远程分支：
+    1、git pull origin master
