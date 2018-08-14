@@ -8,7 +8,7 @@
 
 添加文件到仓库：
     1、git add filename
-    2、git commit "info"
+    2、git commit -m "info"
 
 查看仓库状态：
     git status
